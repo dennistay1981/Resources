@@ -51,7 +51,7 @@ data=pd.DataFrame(scaler.transform(data),columns=data.columns,index=data.index)
 
 #determine the optimal number of clusters with the 'elbow method'
 from sklearn.cluster import KMeans
-n=8   #n can be changed to test more clusters
+n=5   #n can be changed to test more clusters
 num_clusters = range(1, n+1)
 inertias = []
 
